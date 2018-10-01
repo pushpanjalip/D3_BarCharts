@@ -87,7 +87,7 @@ function update(data) {
 
     //EXIT old elements not present in new data
     rects.exit()
-         .attr("fill", "red")    //change fill of exiting ele
+         .attr("fill", "grey")    //change fill of exiting ele
          .transition(t)   //gradually change height to 0 and y to 0
          .attr("height", 0)
          .attr("y", y(0))
@@ -103,7 +103,7 @@ function update(data) {
         .append("rect")
             .attr("x", function(d){ return x(d.month) })
             .attr("width", x.bandwidth)
-            .attr("fill", "grey")
+            .attr("fill", "orange")
             .attr("y", y(0))
             .attr("height", 0)
             //UPDATE old elements present in new data
